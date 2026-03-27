@@ -49,20 +49,12 @@ st.sidebar.info("""
 # --- MODEL LOADING ---
 @st.cache_resource
 def load_my_model():
-    # Ensuring pathing is robust for local/deployment
-    import os
+    model_path = r"C:\\Users\\gargi\\OneDrive\\Desktop\\plant detedction\\trained_models\\plant_disease_prediction_model.h5"
+    model = tf.keras.models.load_model(model_path)
+    return model
 
-model_path = os.path.join(os.getcwd(), "trained_model", "plant_disease_prediction_model.h5")
-
-
-model_path = r"C:\\Users\\gargi\\OneDrive\\Desktop\\plant detedction\\trained_models\\plant_disease_prediction_model.h5"
-
-print("File exists:", os.path.exists(model_path))  # debug line
-model = tf.keras.models.load_model(model_path)
 model = load_my_model()
-print("Model value:", model)
-print("Model type:", type(model))
-
+print("Model loaded successfully:", model)
 class_indices = [
     'Apple___Apple_scab', 'Apple___Black_rot', 'Apple___Cedar_apple_rust', 'Apple___healthy',
     'Blueberry___healthy', 'Cherry_(including_sour)___Powdery_mildew', 'Cherry_(including_sour)___healthy',

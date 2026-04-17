@@ -19,6 +19,13 @@ It provides **instant diagnosis, confidence scores, and treatment suggestions** 
 
 ---
 
+## 👨‍💻 Contributors
+- Shikhar Shukla
+- Teammate 1 - Gargi Verma
+- Teammate 2 - Prachi Gupta 
+- Teammate 3 - Mayank Agarwal 
+- Teammate 4 - Harsh Raj
+- Teammate 5 - Chemate Shubham Sharad 
 ## 🎯 Objective
 
 The primary goal of this project is to bridge the gap between **advanced computer vision techniques** and **real-world agricultural needs** by building a fast, reliable, and user-friendly plant disease detection system.
